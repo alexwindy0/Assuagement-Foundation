@@ -32,8 +32,11 @@ $(document).ready(function(){
 
   $('.nav-item a:first').tab('show');
 
+  
+
 //DONATE AREA COPY TEXT
   const btn1 = document.getElementById("btnbtn");
+  const btn2 = document.getElementById("btnbtn2");
   function copyContent(){
     const text = document.getElementById("myText").innerHTML;
     navigator.clipboard.writeText(text);
@@ -42,6 +45,15 @@ $(document).ready(function(){
   }
 
   btn1.addEventListener("click", copyContent);
+
+  function copyContent1(){
+    const text1 = document.getElementById("myText2").innerHTML;
+    navigator.clipboard.writeText(text1);
+    alert(`copied to clipboard ${text1}`);
+
+  }
+
+  btn2.addEventListener("click", copyContent1);
 
 
 
